@@ -65,7 +65,7 @@ searchEl.addEventListener('input', debounde(e => {
 
 productsEl.addEventListener('click', (e) => {
     const productId = e.target.dataset.id
-    window.location.href = `/order?productId=${productId}`
+    window.location.href = `order?productId=${productId}`
 })
 
 renderProducts()

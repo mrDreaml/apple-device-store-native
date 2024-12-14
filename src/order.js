@@ -5,7 +5,7 @@ const productTemplate = document.getElementById('product')
 const search = new URLSearchParams(location.search)
 const productId = search.get('productId')
 
-const goHome = () => location.href = '/'
+const goHome = () => window.history.go(-1)
 
 if (!productId) {
     goHome()
@@ -24,7 +24,7 @@ const renderProduct = (data) => {
  
     data.images.forEach(imageName => {
         const imgEl = document.createElement('img')
-        imgEl.src = './assets/' + imageName
+        imgEl.src = '../assets/' + imageName
         imgEl.alt = data.title
         imageSlider.appendChild(imgEl)
     })
