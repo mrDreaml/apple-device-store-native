@@ -1,0 +1,12 @@
+{
+  "name": "apple-device-store-native",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://mrdreaml.github.io/apple-device-store-native/",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
