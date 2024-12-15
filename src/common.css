@@ -28,15 +28,15 @@ button {
 
 button.active {
     background-color: white;
-    border: 2px solid #2fec00;
-    color: #2fec00;
+    border: 2px solid #1B8500;
+    color: #1B8500;
     font-weight: bold;
 }
 
 button.reject {
     background-color: white;
-    border: 2px solid #ec0000;
-    color: #ec0000;
+    border: 2px solid #EB0000;
+    color: #EB0000;
     font-weight: bold;
 }
 
@@ -79,13 +79,14 @@ button.reject {
 }
 
 .product__image-slider {
-    max-height: 250px;
+    height: 250px;
     width: 100%;
-    aspect-ratio: 1 / 10;
     display: flex;
     gap: 1em;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    background-color: white;
+    animation: showSlider 1s forwards;
 }
 
 .product__image-slider::-webkit-scrollbar-track {
@@ -110,13 +111,6 @@ display: none;
 }
 .product__image-slider::-webkit-scrollbar-corner {
 background-color: transparent;
-}
-
-.product__image-slider {
-    background-color: white;
-    width: 100%;
-    height: 100%;
-    animation: showSlider 1s forwards;
 }
 
 @keyframes showSlider {

@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Device Store</title>
-    <link rel="stylesheet" href="./src/common.css">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="./src/common.css">
+    <noscript><link rel="stylesheet" href="../src/common.css"></noscript>
     <link rel="stylesheet" href="./src/app.css">
+    <meta name="description" content="Phones Store">
 </head>
 
 <body>
@@ -46,7 +48,7 @@
             </nav>
         </footer>
     </div>
-    <script type="module" src="./src/app.js"></script>
+    <script async type="module" src="./src/app.js"></script>
 </body>
 
 </html>

@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../src/common.css">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="../src/common.css">
+    <noscript><link rel="stylesheet" href="../src/common.css"></noscript>
     <link rel="stylesheet" href="../src/order.css">
+    <meta name="description" content="Phone order page">
 </head>
 <body>
     <header class="header">
@@ -44,7 +46,7 @@
                 <label for="address">Address:</label>
                 <input type="text" id="address" name="address" maxlength="100">
                 <label for="comments">Comments:</label>
-                <textarea name="comments" rows="5" maxlength="300"></textarea>
+                <textarea id="comments" name="comments" rows="5" maxlength="300"></textarea>
                 <div class="profile__form__controls">
                     <button class="reject" type="reset">Cancel</button>
                     <button class="active" type="submit">Order</button>
@@ -61,6 +63,6 @@
         </nav>
     </footer>
 
-    <script type="module" src="../src/order.js"></script>
+    <script async type="module" src="../src/order.js"></script>
 </body>
 </html>
